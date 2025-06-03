@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box vs dispaly block and inline</title>
+</head>
+<style>
+    .main{
+    background-color: chartreuse;
+    text-align: center;
+    display: flex;
+    
+    
+    }
+    .one{
+        background-color: brown;
+        height: 50px;
+        width: 50px;
+    }
+    a{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <h2>Flex start</h2>
+    <div class="main" style="justify-content: flex-start;">
+        <div class="one">This is div1</div>
+        <div class="one">This is div2</div>
+      <div class="one">This is div3</div>
+    </div>
+<h2>Flex end</h2>
+    <div class="main" style="justify-content: flex-end;">
+        <div class="one">This is div1</div>
+        <div class="one">This is div2</div>
+      <div class="one">This is div3</div>
+    </div>
+<h2>Flex around</h2>
+    <div class="main" style="justify-content: space-around;">
+        <div class="one">This is div1</div>
+        <div class="one">This is div2</div>
+      <div class="one">This is div3</div>
+    </div>
+
+<h2>Flex between</h2>
+    <div class="main" style="justify-content: space-between;">
+        <div class="one">This is div1</div>
+        <div class="one">This is div2</div>
+      <div class="one">This is div3</div>
+    </div>
+<h2>Flex space evenly</h2>
+    <div class="main" style="justify-content: space-evenly;">
+        <div class="one">This is div1</div>
+        <div class="one">This is div2</div>
+      <div class="one">This is div3</div>
+    </div>
+</body>
+</html>

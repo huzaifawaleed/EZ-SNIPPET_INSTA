@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youtube Practice</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+ <style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    background-color: red;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+
+  .left,
+  .center,
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left i,
+  .right i {
+    font-size: 24px;
+    color: white;
+  }
+
+  .center {
+    position: relative;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 5px 0;
+  }
+
+  .center input {
+    width: 100%;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    padding: 5px 40px 5px 10px;
+  }
+
+  #search {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+  }
+
+  #mic {
+    font-size: 24px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  sup {
+    font-size: 15px;
+    color: white;
+  }
+
+  /* Responsive for tablets */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      align-items: stretch;
+      padding: 10px;
+    }
+
+    .left,
+    .center,
+    .right {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .center {
+      margin: 10px 0;
+    }
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 480px) {
+    .left i,
+    .right i,
+    #mic {
+      font-size: 18px;
+    }
+
+    #search {
+      right: 30px;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <i class="uil uil-bars"></i>
+      <i class="uil uil-youtube">YouTube <sup>PK</sup></i>
+    </div>
+
+    <div class="center">
+      <input type="search" placeholder="Search">
+      <i id="search" class="uil uil-search"></i>
+      <i id="mic" class="uil uil-microphone"></i>
+    </div>
+
+    <div class="right">
+      <i class="uil uil-plus">Create</i>
+      <i class="uil uil-bell"></i>
+      <i class="uil uil-user-circle"></i>
+    </div>
+  </nav>
+</body>
+</html>

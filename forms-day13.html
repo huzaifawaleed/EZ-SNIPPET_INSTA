@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Validation</title>
+</head>
+<style>
+    form{
+        background-color: aqua;
+        
+    }
+</style>
+<body>
+    <Form>
+        First Name: 
+        <br>
+        <input type="text" required placeholder="Enter your First Name">
+        <br>
+          Last Name:
+          <br>
+           <input type="text" required placeholder="Enter your Last Name">
+           <br>
+        Email: 
+        <br>
+        <input type="text" required placeholder="Enter your Email">
+        <br>
+        Password: 
+        <br>
+        <input type="text" required minlength="8" placeholder="Enter your Password">
+        <br>
+        Phone: 
+        <br>
+        <input type="number" required placeholder="Enter Your Number">
+        <br>
+        Address: 
+        <br>
+        <input type="text" required placeholder="Enter Your Address">
+        <br>
+        <h3>Gender</h3>
+       
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br>
+         Age: 
+         <input type="number">
+         <br>
+         Courses:
+         <input type="checkbox" id="dm" name=""> <label for="dm">Digital Marketing</label>
+         <input type="checkbox" id="wd" name=""> <label for="wd">Web Devalopment</label>
+         <br>
+         <button type="submit">Save</button>
+         <button type="reset">Clear</button>
+
+    </Form>
+</body>
+</html>
