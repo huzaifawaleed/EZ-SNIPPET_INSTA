@@ -18,3 +18,6 @@ console.log(10 !== 8);  /*true*/
 
 console.log(typeof 3);   /*Number*/
 console.log(typeof "Hello");   /*String*/
+
+
+
