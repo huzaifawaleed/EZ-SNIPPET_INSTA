@@ -35,17 +35,3 @@ else{
     console.log("10 is greater than 15")
 }
 
-// Practice Questions
-// Check if number is even or odd
-
-let num = 3;
-console.log(`Number is: ${num}`);
-
-if(num % 2 == 0){
-    console.log("Number is EVEN");
-}
-else{
-    console.log("Number is ODD");
-}
-
-
