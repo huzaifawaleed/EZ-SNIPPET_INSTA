@@ -20,4 +20,4 @@ console.log(typeof 3);   /*Number*/
 console.log(typeof "Hello");   /*String*/
 
 
-
+console.log(1 + '1' - 1);
