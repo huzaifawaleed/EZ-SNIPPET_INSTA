@@ -81,10 +81,10 @@ else{
 
 // 5: Simple login check
 
-let username = "huzaifa";
+let username = "Waleed";
 let pass = "12349"
 
-if (username === "huzaifa" && pass === "1234") {
+if (username === "Waleed" && pass === "1234") {
     console.log("User can login");
 }
 else{
