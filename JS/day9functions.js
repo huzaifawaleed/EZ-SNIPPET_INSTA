@@ -17,3 +17,13 @@ function add(){
 // console.log(res);  // get output with this method.
 
 console.log(add());   // and with this also.
+
+
+function minus(){
+    let d = 30;
+    let e = 20;
+   return d - e; 
+}
+
+console.log(minus());
+
