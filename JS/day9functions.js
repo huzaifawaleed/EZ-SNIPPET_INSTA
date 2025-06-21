@@ -9,7 +9,11 @@ function add(){
     let a = 20;
     let b = 30;
     return a + b;
+    // let res = a + b;
+    // return res;
 }
 
-// let sum = add(); // get output ith this.
-console.log(add());  // or with this same.
+// res = add();
+// console.log(res);  // get output with this method.
+
+console.log(add());   // and with this also.
