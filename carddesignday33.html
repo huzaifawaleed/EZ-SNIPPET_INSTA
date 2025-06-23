@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,5 +27,48 @@
         <button>Next</button>
     </div>
     
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Number Game</title>
+</head>
+<body>
+  <h1>🎯 Guess the Number (1 to 100)</h1>
+  
+  <p>Enter your guess:</p>
+  <input type="number" id="guessInput">
+  <button onclick="checkGuess()">Submit</button>
+  
+  <p id="message"></p>
+  <p id="attempts"></p>
+
+  <script>
+    const target = Math.floor(Math.random() * 100) + 1;
+    let attemptCount = 0;
+
+    function checkGuess() {
+      const guess = parseInt(document.getElementById("guessInput").value);
+      attemptCount++;
+
+      const message = document.getElementById("message");
+      const attempts = document.getElementById("attempts");
+
+      if (isNaN(guess)) {
+        message.innerText = "❌ Please enter a valid number.";
+      } else if (guess < target) {
+        message.innerText = "🔻 Too low!";
+      } else if (guess > target) {
+        message.innerText = "🔺 Too high!";
+      } else {
+        message.innerText = `🎉 Correct! The number was ${target}.`;
+      }
+
+      attempts.innerText = `Attempts: ${attemptCount}`;
+    }
+  </script>
 </body>
 </html>
