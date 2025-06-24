@@ -37,7 +37,7 @@
   <title>Guess the Number Game</title>
 </head>
 <body>
-  <h1>🎯 Guess the Number (1 to 100)</h1>
+  <h1>Guess the Number (1 to 100)</h1>
   
   <p>Enter your guess:</p>
   <input type="number" id="guessInput">
@@ -58,13 +58,13 @@
       const attempts = document.getElementById("attempts");
 
       if (isNaN(guess)) {
-        message.innerText = "❌ Please enter a valid number.";
+        message.innerText = "Please enter a valid number.";
       } else if (guess < target) {
-        message.innerText = "🔻 Too low!";
+        message.innerText = "Too low!";
       } else if (guess > target) {
-        message.innerText = "🔺 Too high!";
+        message.innerText = "Too high!";
       } else {
-        message.innerText = `🎉 Correct! The number was ${target}.`;
+        message.innerText = `Correct! The number was ${target}.`;
       }
 
       attempts.innerText = `Attempts: ${attemptCount}`;
