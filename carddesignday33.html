@@ -58,11 +58,11 @@
       const attempts = document.getElementById("attempts");
 
       if (isNaN(guess)) {
-        message.innerText = "Enter a number.";
+        message.innerText = "Enter a Number.";
       } else if (guess < target) {
-        message.innerText = "Too low!";
+        message.innerText = "Too Low!";
       } else if (guess > target) {
-        message.innerText = "Too high!";
+        message.innerText = "Too High!";
       } else {
         message.innerText = `Correct! The number was ${target}.`;
       }
